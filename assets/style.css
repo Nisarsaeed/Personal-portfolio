@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+p{
+    margin-bottom: 0;
+}
+.progress{
+    height: 10px;
+    
+}
+
+.card{
+    width: 18rem;
+    height: 10rem;
+    box-shadow: -12px -11px 7px 1px rgb(196 185 185 / 65%);
+    margin: 1.5rem;
+}
+
+.banner{
+    height: 40vh;
+}
+
+.contact{
+    display: block;
+}
+
+
+
+@media (min-width: 100px) and (max-width: 576px){
+    .card{
+        margin-left: 2rem;
+    }
+    .about-img{
+        margin-top: 3rem;
+    }
+}
+
+
+/* lineup class and keyframes */
+.lineUp {
+    animation: 4s anim-lineUp ease-out 1;
+  }
+  @keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+
+  /* card hover effect  */
+
+  
+  .box{
+    
+    background:white;
+    
+    border:2px solid #d6d6d6;
+    
+    border-radius:3px;
+    transition:.2s all; 
+  }
+  .box-wrap:hover .box{
+    filter:blur(2px);
+    opacity:.5;
+    transform: scale(.98);
+    box-shadow:none;
+  }
+  .box-wrap:hover .box:hover{
+    transform:scale(1);
+    filter:blur(0px);
+    opacity:1;
+    box-shadow:0 8px 20px 0px rgba(0,0,0,0.125);
+  }
